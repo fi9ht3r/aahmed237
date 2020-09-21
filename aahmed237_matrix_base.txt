@@ -12,14 +12,16 @@
 
 OS: Linux version 3.10.0-1127.18.2.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Sun Jul 26 15:27:06 UTC 2020
 User and groups: uid=53086(aahmed237) gid=100(users) groups=100(users)
-Hostname: mtrx-node04pd.dcm.senecacollege.ca
+Hostname: mtrx-node01pd.dcm.senecacollege.ca
 Current logged in users: 
-cpop2    pts/2    10.29.48.95      16:13    4.00s  0.09s  0.09s -bash
-hzahoor  pts/3    10.29.31.39      16:01    1:48   0.11s  0.11s -bash
-otayhan  pts/4    10.29.16.197     16:13    3:00   0.11s  0.11s -bash
-vsanthar pts/6    10.29.60.10      14:01   10:28   0.22s  0.22s -bash
-aahmed23 pts/7    10.29.28.27      16:13    4.00s  0.16s  0.01s w
-xliu295  pts/10   10.29.14.6       14:51   12.00s  0.70s  0.00s /home/uli101/assign1
+trlai    pts/0    10.29.31.120     20:24    1:36m  0.06s  0.06s -bash
+sroostae pts/1    10.29.26.204     21:27    1:10   0.12s  0.00s /home/uli101/assign1
+ssiraj1  pts/2    10.29.22.123     20:45   53:10   0.14s  0.08s ssh ssiraj1@matrix.senecacollege.ca
+amohamma pts/3    10.29.60.144     21:46    2:14   0.13s  0.13s -bash
+aahmed23 pts/4    10.29.53.127     21:47    6.00s  0.10s  0.00s tmux
+mklitwin pts/7    10.29.17.31      22:01   22.00s  0.09s  0.09s -bash
+ssiraj1  pts/10   10.102.108.5     20:45   53:18   0.13s  0.13s -bash
+awei5    pts/13   10.29.23.143     20:50    1:10m  0.09s  0.09s -bash
 
 
 ============================================== Hardware Information ============================================
@@ -27,7 +29,7 @@ xliu295  pts/10   10.29.14.6       14:51   12.00s  0.70s  0.00s /home/uli101/ass
 
 Architecture: x86_64
 Processor Model: Intel(R) CPU
-CPU: 2397.221
+CPU: 2297.340
 Main Memory Size: 3843864 kB
 Total Swap Memory: 4194300 kB
 Devices: disk,sda,sda1,sda2,sda3
@@ -35,33 +37,34 @@ Mounted Devices:
 Filesystem               Size  Used Avail Use% Mounted on
 devtmpfs                 1.9G     0  1.9G   0% /dev
 tmpfs                    1.9G  4.0K  1.9G   1% /dev/shm
-tmpfs                    1.9G   10M  1.9G   1% /run
+tmpfs                    1.9G   11M  1.9G   1% /run
 tmpfs                    1.9G     0  1.9G   0% /sys/fs/cgroup
-/dev/mapper/centos-root   50G  8.6G   42G  18% /
+/dev/mapper/centos-root   50G  8.7G   42G  18% /
 /dev/sda2               1014M  320M  695M  32% /boot
 /dev/sda1                200M   16M  184M   8% /boot/efi
 /dev/mapper/centos-tmp   5.0G   33M  5.0G   1% /tmp
 mtrx-home01pd:/home      2.0T  236G  1.8T  12% /home
-tmpfs                    376M     0  376M   0% /run/user/55487
-tmpfs                    376M     0  376M   0% /run/user/58967
-tmpfs                    376M     0  376M   0% /run/user/58833
-tmpfs                    376M     0  376M   0% /run/user/59078
-tmpfs                    376M     0  376M   0% /run/user/58502
-tmpfs                    376M     0  376M   0% /run/user/55362
-tmpfs                    376M     0  376M   0% /run/user/55532
-tmpfs                    376M     0  376M   0% /run/user/54564
-tmpfs                    376M     0  376M   0% /run/user/59118
-tmpfs                    376M     0  376M   0% /run/user/58534
+tmpfs                    376M     0  376M   0% /run/user/59034
+tmpfs                    376M     0  376M   0% /run/user/55262
+tmpfs                    376M     0  376M   0% /run/user/57919
+tmpfs                    376M     0  376M   0% /run/user/55188
+tmpfs                    376M     0  376M   0% /run/user/59017
+tmpfs                    376M     0  376M   0% /run/user/50415
+tmpfs                    376M     0  376M   0% /run/user/52547
+tmpfs                    376M     0  376M   0% /run/user/55884
+tmpfs                    376M     0  376M   0% /run/user/58776
+tmpfs                    376M     0  376M   0% /run/user/59105
+tmpfs                    376M     0  376M   0% /run/user/58614
+tmpfs                    376M     0  376M   0% /run/user/56851
 tmpfs                    376M     0  376M   0% /run/user/53086
-tmpfs                    376M     0  376M   0% /run/user/58753
+tmpfs                    376M     0  376M   0% /run/user/58476
 
 
 
 ============================================== Network Information ============================================
 
 
-DNS in use: dcm.senecacollege.ca
-Default Gateway: 10.102.108.1
+DNS in use: Default Gateway: 10.102.108.1
 Network Devices Names: 
  lo
  eth0
@@ -69,56 +72,87 @@ lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         inet 127.0.0.1  netmask 255.0.0.0
         inet6 ::1  prefixlen 128  scopeid 0x10<host>
         loop  txqueuelen 1000  (Local Loopback)
-        RX packets 234  bytes 15872 (15.5 KiB)
+        RX packets 3141  bytes 272322 (265.9 KiB)
         RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 234  bytes 15872 (15.5 KiB)
+        TX packets 3141  bytes 272322 (265.9 KiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-        inet 10.102.108.14  netmask 255.255.255.192  broadcast 10.102.108.63
-        inet6 fe80::21d:d8ff:feb7:1c94  prefixlen 64  scopeid 0x20<link>
-        ether 00:1d:d8:b7:1c:94  txqueuelen 1000  (Ethernet)
-        RX packets 644699  bytes 155137849 (147.9 MiB)
-        RX errors 0  dropped 71907  overruns 0  frame 0
-        TX packets 264905  bytes 115106064 (109.7 MiB)
+        inet 10.102.108.11  netmask 255.255.255.192  broadcast 10.102.108.63
+        inet6 fe80::21d:d8ff:feb7:1c91  prefixlen 64  scopeid 0x20<link>
+        ether 00:1d:d8:b7:1c:91  txqueuelen 1000  (Ethernet)
+        RX packets 860791  bytes 258800392 (246.8 MiB)
+        RX errors 0  dropped 49358  overruns 0  frame 0
+        TX packets 499966  bytes 141881210 (135.3 MiB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 Listening Ports: 
 State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              
-LISTEN     0      128          *:111                      *:*                  
 LISTEN     0      128          *:22                       *:*                  
 LISTEN     0      100    127.0.0.1:25                       *:*                  
-LISTEN     0      128          *:674                      *:*                  
+LISTEN     0      128          *:704                      *:*                  
 LISTEN     0      128    127.0.0.1:199                      *:*                  
 LISTEN     0      128          *:875                      *:*                  
-LISTEN     0      128       [::]:111                   [::]:*                  
-LISTEN     0      128       [::]:80                    [::]:*                  
+LISTEN     0      128          *:111                      *:*                  
 LISTEN     0      5         [::]:4118                  [::]:*                  
 LISTEN     0      128       [::]:443                   [::]:*                  
+LISTEN     0      128       [::]:111                   [::]:*                  
+LISTEN     0      128       [::]:80                    [::]:*                  
 Active Ports: 
 Netid  State      Recv-Q Send-Q Local Address:Port               Peer Address:Port              
-tcp    CLOSE-WAIT 32     0      10.102.108.14:50450              10.101.110.9:443                
-tcp    ESTAB      0      0      10.102.108.14:58860              10.101.105.138:514                
-tcp    ESTAB      0      0      10.102.108.5:22                 10.29.60.10:51012              
-tcp    ESTAB      0      0      10.102.108.5:22                 10.29.14.6:56434              
-tcp    ESTAB      0      0      10.102.108.14:52442              10.101.250.62:636                
-tcp    ESTAB      0      0      10.102.108.5:22                 10.29.31.39:56203              
-tcp    ESTAB      0      0      10.102.108.14:1021               10.102.108.10:2049               
-tcp    ESTAB      0      0      10.102.108.5:22                 10.29.48.44:57349              
-tcp    CLOSE-WAIT 32     0      10.102.108.14:50690              10.101.110.9:443                
-tcp    ESTAB      0      0      10.102.108.5:22                 10.29.31.51:50924              
-tcp    ESTAB      0      0      10.102.108.5:22                 10.29.47.113:19927              
-tcp    ESTAB      0      0      10.102.108.5:22                 10.29.28.27:54444              
-tcp    ESTAB      0      0      10.102.108.5:22                 10.29.16.197:52510              
-tcp    ESTAB      0      0      10.102.108.5:22                 10.29.48.95:59296              
-tcp    ESTAB      0      0      10.102.108.5:22                 10.29.24.246:50185              
-tcp    ESTAB      0      0      10.102.108.5:22                 10.29.15.103:65304              
+tcp    ESTAB      0      0      10.102.108.5:22                 10.29.22.21:50903              
+tcp    ESTAB      0      0      10.102.108.11:697                10.102.108.10:2049               
+tcp    ESTAB      0      0      10.102.108.11:46888              10.101.250.62:636                
+tcp    ESTAB      0      0      10.102.108.5:22                 10.29.27.84:62268              
+tcp    ESTAB      0      0      10.102.108.5:22                 10.29.16.5:53391              
+tcp    ESTAB      0      0      10.102.108.5:22                 10.29.26.204:56678              
+tcp    ESTAB      0      0      10.102.108.5:22                 10.102.108.5:40608              
+tcp    ESTAB      0      0      10.102.108.5:22                 10.29.48.100:53914              
+tcp    ESTAB      0      0      10.102.108.5:40608              10.102.108.5:22                 
+tcp    CLOSE-WAIT 32     0      10.102.108.11:57700              10.101.110.10:443                
+tcp    ESTAB      0      0      10.102.108.5:22                 10.29.31.120:63001              
+tcp    ESTAB      0      0      10.102.108.5:22                 10.29.23.143:63181              
+tcp    ESTAB      0      0      10.102.108.5:22                 10.29.53.127:58531              
+tcp    CLOSE-WAIT 32     0      10.102.108.11:46568              10.101.110.9:443                
+tcp    ESTAB      0      0      10.102.108.5:22                 10.29.26.241:53148              
+tcp    ESTAB      0      0      10.102.108.11:52222              10.101.105.138:514                
+tcp    ESTAB      0      720    10.102.108.5:22                 10.29.59.104:58149              
+tcp    ESTAB      0      0      10.102.108.5:22                 10.29.60.144:61205              
+tcp    ESTAB      0      0      10.102.108.5:22                 10.29.17.31:54429              
+tcp    ESTAB      0      0      10.102.108.5:22                 10.29.22.123:59914              
+tcp    ESTAB      0      0      10.102.108.5:22                 10.29.31.119:50941              
 
 
 ======================================= System, Services and Software Information ==============================
 
 
+/usr/bin/rpm
 
+OS Installed Date: 
+Install Date: Fri 03 Nov 2017 01:47:01 PM EDT
+
+
+Number of Software Compilers installed, timeout in 20sec: 19
+And they are, timeout 20sec: 
+gcc.x86_64                              4.8.5-39.el7               @base        
+gcc-c++.x86_64                          4.8.5-39.el7               @base        
+gcc-gfortran.x86_64                     4.8.5-39.el7               @base        
+kernel-debug-devel.x86_64               3.10.0-1127.18.2.el7       @updates     
+libgcc.i686                             4.8.5-39.el7               @base        
+libgcc.x86_64                           4.8.5-39.el7               @base        
+microsoft-hyper-v-debuginfo.x86_64      4.2.3-20170925             installed    
+ocaml-srpm-macros.noarch                5-2.el7                    @base        
+perl-srpm-macros.noarch                 1-8.el7                    @base        
+python-rpm-macros.noarch                3-32.el7                   @base        
+python-srpm-macros.noarch               3-32.el7                   @base        
+python2-rpm-macros.noarch               3-32.el7                   @base        
+redhat-rpm-config.noarch                9.1.0-88.el7.centos        @base        
+rpm.x86_64                              4.11.3-43.el7              @base        
+rpm-build.x86_64                        4.11.3-43.el7              @base        
+rpm-build-libs.x86_64                   4.11.3-43.el7              @base        
+rpm-libs.x86_64                         4.11.3-43.el7              @base        
+rpm-python.x86_64                       4.11.3-43.el7              @base        
+rpm-sign.x86_64                         4.11.3-43.el7              @base        
 
 Enabled Services: 
 brandbot.path
@@ -174,7 +208,6 @@ remote-fs.target
 runlevel2.target
 runlevel3.target
 runlevel4.target
-
 
 Disabled Services: 
 tmp.mount
@@ -239,8 +272,6 @@ fstrim.timer
 mdcheck_continue.timer
 mdcheck_start.timer
 mdmonitor-oneshot.timer
-
-
 ======================================= Security and Firewall Information ==============================
 
 
@@ -282,40 +313,42 @@ root
 
 
 Environment:  
-XDG_SESSION_ID=134
-HOSTNAME=mtrx-node04pd.dcm.senecacollege.ca
+XDG_SESSION_ID=257
+HOSTNAME=mtrx-node01pd.dcm.senecacollege.ca
 rvm_bin_path=/usr/local/rvm/bin
 GEM_HOME=/usr/local/rvm/gems/ruby-2.7.0
 SHELL=/bin/bash
 TERM=xterm-256color
 HISTSIZE=9999
-SSH_CLIENT=10.29.28.27 54444 22
-TMPDIR=/tmp
 IRBRC=/usr/local/rvm/rubies/ruby-2.7.0/.irbrc
+SSH_CLIENT=10.29.53.127 58531 22
+TMPDIR=/tmp
 MY_RUBY_HOME=/usr/local/rvm/rubies/ruby-2.7.0
-SSH_TTY=/dev/pts/7
+SSH_TTY=/dev/pts/4
 USER=aahmed237
-LD_LIBRARY_PATH=:/opt/oracle/instantclient_12_2:/opt/oracle/instantclient_12_2:/usr/local/gcc/9.1.0/lib:/usr/local/gcc/gsl-2.5/lib
+LD_LIBRARY_PATH=:/opt/oracle/instantclient_12_2:/usr/local/gcc/9.1.0/lib:/usr/local/gcc/gsl-2.5/lib:/opt/oracle/instantclient_12_2:/usr/local/gcc/9.1.0/lib:/usr/local/gcc/gsl-2.5/lib
 LS_COLORS=no=00:fi=00:di=04;35:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:
 TEMP=/tmp
 ORACLE_SID=oracle12c
 rvm_path=/usr/local/rvm
 ORACLE_BASE=/opt/oracle
+TMUX=/tmp/tmux-53086/default,175183,0
 LSCOLORS=Gxfxcxdxbxegedabagacad
 rvm_prefix=/usr/local
-PATH=/Library/Frameworks/Python.framework/Versions/3.7/bin:/home/uli101/bin:/usr/local/rvm/gems/ruby-2.7.0/bin:/usr/local/rvm/gems/ruby-2.7.0@global/bin:/usr/local/rvm/rubies/ruby-2.7.0/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/oracle/instantclient_12_2:/usr/local/rvm/bin:.
 MAIL=/var/spool/mail/aahmed237
+PATH=/Library/Frameworks/Python.framework/Versions/3.7/bin:/home/uli101/bin:/Library/Frameworks/Python.framework/Versions/3.7/bin:/home/uli101/bin:/usr/local/rvm/gems/ruby-2.7.0/bin:/usr/local/rvm/gems/ruby-2.7.0@global/bin:/usr/local/rvm/rubies/ruby-2.7.0/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/oracle/instantclient_12_2:/usr/local/rvm/bin:.:/opt/oracle/instantclient_12_2:.
 TNS_ADMIN=/opt/oracle/instantclient_12_2
 PWD=/home/aahmed237/ops500/lab01
 LANG=en_CA.UTF-8
+TMUX_PANE=%2
 HISTCONTROL=ignoredups
 rvm_version=1.29.10 (latest)
 HOME=/home/aahmed237
-SHLVL=2
+SHLVL=3
 LOGNAME=aahmed237
 CVS_RSH=ssh
-SSH_CONNECTION=10.29.28.27 54444 10.102.108.5 22
 GEM_PATH=/usr/local/rvm/gems/ruby-2.7.0:/usr/local/rvm/gems/ruby-2.7.0@global
+SSH_CONNECTION=10.29.53.127 58531 10.102.108.5 22
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 XDG_RUNTIME_DIR=/run/user/53086
 ORACLE_HOME=/opt/oracle/instantclient_12_2
