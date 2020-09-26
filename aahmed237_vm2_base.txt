@@ -1,0 +1,237 @@
+
+# Author: Abdullahi Ahmed
+# Course: OPS500 NBB
+# Lab 1, Part 2
+# Date: Sat 19 Sep 2020
+# Version 1
+
+
+
+============================================== Some Basic Info =================================================
+
+
+OS: Linux version 4.18.0-193.19.1.el8_2.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 8.3.1 20191121 (Red Hat 8.3.1-5) (GCC)) #1 SMP Mon Sep 14 14:37:00 UTC 2020
+User and groups: uid=1000(student) gid=100(users) groups=100(users),10(wheel) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+Hostname: vm2
+Current logged in users: 
+student  pts/0    10.102.108.11    06:23    4.00s  0.02s  0.00s w
+
+
+============================================== Hardware Information ============================================
+
+
+Architecture: x86_64
+Processor Model: Intel(R) CPU
+CPU: 2699.999
+Main Memory Size: 1870832 kB
+Total Swap Memory: 2097148 kB
+Devices: disk,sda,sda1,sda2
+Mounted Devices: 
+Filesystem           Size  Used Avail Use% Mounted on
+devtmpfs             897M     0  897M   0% /dev
+tmpfs                914M     0  914M   0% /dev/shm
+tmpfs                914M  8.7M  905M   1% /run
+tmpfs                914M     0  914M   0% /sys/fs/cgroup
+/dev/mapper/cl-root   17G  1.6G   16G   9% /
+/dev/sda1            976M  198M  712M  22% /boot
+tmpfs                183M     0  183M   0% /run/user/1000
+
+
+
+============================================== Network Information ============================================
+
+
+DNS in use: Default Gateway: 172.17.255.1
+Network Devices Names: 
+ lo
+ ens192
+ ens224
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ens192: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.17.1.2  netmask 255.255.0.0  broadcast 172.17.255.255
+        inet6 fe80::250:56ff:fe00:7b  prefixlen 64  scopeid 0x20<link>
+        ether 00:50:56:00:00:7b  txqueuelen 1000  (Ethernet)
+        RX packets 941  bytes 417838 (408.0 KiB)
+        RX errors 0  dropped 26  overruns 0  frame 0
+        TX packets 443  bytes 63319 (61.8 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+ens224: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        ether 00:0c:29:54:7d:7a  txqueuelen 1000  (Ethernet)
+        RX packets 196  bytes 44584 (43.5 KiB)
+        RX errors 0  dropped 26  overruns 0  frame 0
+        TX packets 157  bytes 23518 (22.9 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+Listening Ports: 
+State     Recv-Q    Send-Q       Local Address:Port        Peer Address:Port    
+LISTEN    0         128                0.0.0.0:22               0.0.0.0:*       
+LISTEN    0         128                0.0.0.0:5355             0.0.0.0:*       
+LISTEN    0         128                   [::]:22                  [::]:*       
+LISTEN    0         128                   [::]:5355                [::]:*       
+Active Ports: 
+Netid  State  Recv-Q  Send-Q        Local Address:Port      Peer Address:Port   
+udp    ESTAB  0       0         172.17.1.2%ens192:68       172.17.255.10:67     
+tcp    ESTAB  0       0                172.17.1.2:22       10.102.108.11:48304  
+
+
+======================================= System, Services and Software Information ==============================
+
+
+/usr/bin/rpm
+
+OS Installed Date: 
+Install Date: Tue 23 Jun 2020 10:52:13 AM EDT
+
+
+Number of Software Compilers installed, timeout in 20sec: 8
+And they are, timeout 20sec: 
+elfutils-debuginfod-client.x86_64    0.178-7.el8                           @AppStream
+libgcc.x86_64                        8.3.1-5.el8.0.2                       @anaconda 
+python3-rpm.x86_64                   4.14.2-37.el8                         @anaconda 
+rpm.x86_64                           4.14.2-37.el8                         @anaconda 
+rpm-build-libs.x86_64                4.14.2-37.el8                         @anaconda 
+rpm-libs.x86_64                      4.14.2-37.el8                         @anaconda 
+rpm-plugin-selinux.x86_64            4.14.2-37.el8                         @anaconda 
+rpm-plugin-systemd-inhibit.x86_64    4.14.2-37.el8                         @anaconda 
+
+Enabled Services: 
+auditd.service
+autovt@.service
+crond.service
+dbus-org.fedoraproject.FirewallD1.service
+dbus-org.freedesktop.nm-dispatcher.service
+dbus-org.freedesktop.resolve1.service
+firewalld.service
+getty@.service
+import-state.service
+irqbalance.service
+kdump.service
+loadmodules.service
+lvm2-monitor.service
+microcode.service
+NetworkManager-dispatcher.service
+NetworkManager-wait-online.service
+NetworkManager.service
+nis-domainname.service
+rngd.service
+rsyslog.service
+selinux-autorelabel-mark.service
+sshd.service
+sssd.service
+syslog.service
+systemd-resolved.service
+tuned.service
+vgauthd.service
+vmtoolsd.service
+dm-event.socket
+lvm2-lvmpolld.socket
+sssd-kcm.socket
+remote-fs.target
+dnf-makecache.timer
+unbound-anchor.timer
+
+Disabled Services: 
+run-vmblock\x2dfuse.mount
+tmp.mount
+arp-ethers.service
+blk-availability.service
+console-getty.service
+cpupower.service
+debug-shell.service
+ebtables.service
+iprdump.service
+iprinit.service
+iprupdate.service
+nftables.service
+rdisc.service
+rngd-wake-threshold.service
+serial-getty@.service
+sshd-keygen@.service
+tcsd.service
+sshd.socket
+sssd-autofs.socket
+sssd-nss.socket
+sssd-pac.socket
+sssd-pam-priv.socket
+sssd-pam.socket
+sssd-ssh.socket
+sssd-sudo.socket
+ctrl-alt-del.target
+exit.target
+halt.target
+iprutils.target
+kexec.target
+poweroff.target
+reboot.target
+remote-cryptsetup.target
+runlevel0.target
+runlevel6.target
+fstrim.timer
+======================================= Security and Firewall Information ==============================
+
+
+/usr/sbin/sestatus
+
+SElinux is: enabled
+/sys/fs/selinux
+directory:
+name:
+enforcing
+config
+status:
+status:
+checking:
+policy
+grsecurity Not Found
+
+
+======================================= Other Information ==============================
+
+
+Useful software
+/usr/bin/curl
+/usr/bin/ping
+/usr/bin/base64
+/usr/bin/sudo
+
+
+Superusers: 
+root
+
+
+Environment:  
+LS_COLORS=no=00:fi=00:di=04;35:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:
+SSH_CONNECTION=10.102.108.11 48304 172.17.1.2 22
+LANG=en_US.utf8
+HISTCONTROL=ignoredups
+HOSTNAME=vm2
+XDG_SESSION_ID=5
+USER=student
+LSCOLORS=Gxfxcxdxbxegedabagacad
+SELINUX_ROLE_REQUESTED=
+PWD=/home/student
+HOME=/home/student
+SSH_CLIENT=10.102.108.11 48304 22
+SELINUX_LEVEL_REQUESTED=
+SSH_TTY=/dev/pts/0
+MAIL=/var/spool/mail/student
+SHELL=/bin/bash
+TERM=xterm-256color
+SELINUX_USE_CURRENT_RANGE=
+SHLVL=2
+LOGNAME=student
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+XDG_RUNTIME_DIR=/run/user/1000
+PATH=/Library/Frameworks/Python.framework/Versions/3.7/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+HISTSIZE=1000
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+_=/usr/bin/env
