@@ -1,0 +1,91 @@
+.
+├── aahmed237_gateway_base.txt
+├── aahmed237_matrix_base.txt
+├── aahmed237_vm2_base.txt
+├── aahmed237_vm3_base.txt
+├── aahmed237_vm4_base.txt
+├── .git
+│   ├── branches
+│   ├── COMMIT_EDITMSG
+│   ├── config
+│   ├── description
+│   ├── HEAD
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   └── master
+│   │       └── remotes
+│   │           └── origin
+│   │               ├── HEAD
+│   │               └── master
+│   ├── objects
+│   │   ├── 09
+│   │   │   └── c0e2587519bfa586e6fd832e07f8882632f3bb
+│   │   ├── 0a
+│   │   │   └── 3f21b3f169766a000c1693553b406220325da3
+│   │   ├── 10
+│   │   │   └── 2f53c99d740c636f70fd4bef07c2b1a092b149
+│   │   ├── 1d
+│   │   │   └── 387b076703d04a4e5fd8d9e648458cbad44aa4
+│   │   ├── 23
+│   │   │   └── 22e633c9bc97e555dc41334f77ed58b0ce958b
+│   │   ├── 2a
+│   │   │   └── e5b59eed70abf86e0ee36304c17e1257f58dad
+│   │   ├── 2b
+│   │   │   └── 3d998d65b63b3844a5b9cb26ad9a1fb83b9b2d
+│   │   ├── 4d
+│   │   │   └── 90905e6abf959cb2038b80910c005716f935a7
+│   │   ├── 5a
+│   │   │   └── b0949eeef4896cb1c4736dbaf17493cadbcc08
+│   │   ├── 64
+│   │   │   └── 430d27df46d7270051c4615283aaae59b6748f
+│   │   ├── 6b
+│   │   │   └── 9aaa808d1d3e66d477ad13a786fe9413e004ef
+│   │   ├── 7b
+│   │   │   └── c5c3a31a493139d041cc7f71ebf2ffcfab5883
+│   │   ├── 9a
+│   │   │   └── e01333255d28a8e807f2c3c1940d7869a21523
+│   │   ├── 9f
+│   │   │   └── bd131291970bd19711ba3eeb97f54fa5c816cd
+│   │   ├── b4
+│   │   │   └── 13487514d839f15f896f3665bc9e6be0adf1ec
+│   │   ├── bf
+│   │   │   └── 535fc428063962e83b77e96c4cf00250ceefb8
+│   │   ├── c6
+│   │   │   └── 92a889784979fc305ebfec207ae46ee9699a0d
+│   │   ├── ee
+│   │   │   └── d998526615d3c6ed366002f9acc329c85bc43a
+│   │   ├── f0
+│   │   │   └── 5d68e83a6066bf960cc3f3a2cdfe7ded17a9df
+│   │   ├── info
+│   │   └── pack
+│   ├── packed-refs
+│   └── refs
+│       ├── heads
+│       │   └── master
+│       ├── remotes
+│       │   └── origin
+│       │       ├── HEAD
+│       │       └── master
+│       └── tags
+├── gitlog.txt
+├── README.md
+└── repo_tree.txt
+
+36 directories, 52 files

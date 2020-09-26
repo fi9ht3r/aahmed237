@@ -1,0 +1,40 @@
+commit 4d90905e6abf959cb2038b80910c005716f935a7
+Author: Abdullahi Ahmed <aahmed237@mtrx-node03pd.dcm.senecacollege.ca>
+Date:   Fri Sep 25 20:37:16 2020 -0400
+
+    Adding base outputs
+
+commit bf535fc428063962e83b77e96c4cf00250ceefb8
+Author: Abdullahi Ahmed <aahmed237@mtrx-node01pd.dcm.senecacollege.ca>
+Date:   Sun Sep 20 22:03:59 2020 -0400
+
+    Modified compilers installed part
+
+commit 64430d27df46d7270051c4615283aaae59b6748f
+Author: Abdullahi Ahmed <aahmed237@mtrx-node05pd.dcm.senecacollege.ca>
+Date:   Sun Sep 20 20:19:28 2020 -0400
+
+    Base script output
+
+commit f05d68e83a6066bf960cc3f3a2cdfe7ded17a9df
+Merge: 7bc5c3a 2b3d998
+Author: fi9ht3r <71492405+fi9ht3r@users.noreply.github.com>
+Date:   Fri Sep 18 05:03:10 2020 -0400
+
+    Merge pull request #1 from fi9ht3r/adding-info-to-readme
+    
+    updated
+
+commit 2b3d998d65b63b3844a5b9cb26ad9a1fb83b9b2d
+Author: fi9ht3r <71492405+fi9ht3r@users.noreply.github.com>
+Date:   Fri Sep 18 05:02:17 2020 -0400
+
+    updated
+    
+    Added my information
+
+commit 7bc5c3a31a493139d041cc7f71ebf2ffcfab5883
+Author: fi9ht3r <71492405+fi9ht3r@users.noreply.github.com>
+Date:   Fri Sep 18 04:58:56 2020 -0400
+
+    Initial commit
